@@ -1,0 +1,150 @@
+@import "futures.css";
+
+/* Container DIV - automatically generated */
+.simply-scroll-container { 
+	position: relative;
+}
+
+/* Clip DIV - automatically generated */
+.simply-scroll-clip { 
+	position: relative;
+	overflow: hidden;
+}
+
+/* UL/OL/DIV - the element that simplyScroll is inited on
+Class name automatically added to element */
+.simply-scroll-list { 
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+	
+.simply-scroll-list li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+	
+.simply-scroll-list li img {
+	border: none;
+	display: block;
+}
+
+/* Custom class modifications - adds to / overrides above
+
+.simply-scroll is default base class */
+
+/* Container DIV */
+.simply-scroll { 
+	width: 800px;
+	height: 400px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 1em;
+}
+
+/* Clip DIV */
+.simply-scroll .simply-scroll-clip {
+	width: 800px;
+	height: 400px;
+}
+	
+/* Explicitly set height/width of each list item */	
+.simply-scroll .simply-scroll-list li {
+	float: left; /* Horizontal scroll only */
+	width: 300px;
+	height: 400px;
+}
+
+.simply-scroll .simply-scroll-list li.small {
+	width: 260px;
+	height: 400px;
+}
+
+.simply-scroll .simply-scroll-list li.verysmall {
+	width: 210px;
+	height: 400px;
+}
+
+.simply-scroll .simply-scroll-list li.squere {
+	width: 400px;
+	height: 400px;
+}
+
+.simply-scroll .simply-scroll-list li.verybig {
+	width: 500px;
+	height: 400px;
+} 
+
+.simply-scroll .simply-scroll-list li img {
+	height: 400px;
+}
+
+@media screen and (max-width:800px){
+	/* Container DIV */
+	.simply-scroll { 
+		width: auto;
+		height: 400px;
+		margin-top: 0;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 1em;
+	}
+	
+	/* Clip DIV */
+	.simply-scroll .simply-scroll-clip {
+		width: auto;
+		height: auto;
+	}
+}
+
+@media screen and (max-width:480px){
+	/* Container DIV */
+	.simply-scroll { 
+		width: auto;
+		height: 300px;
+		margin-top: 0;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 1em;
+	}
+	
+	/* Clip DIV */
+	.simply-scroll .simply-scroll-clip {
+		width: auto;
+		height: 300;
+	}
+	
+	/* Explicitly set height/width of each list item */	
+	.simply-scroll .simply-scroll-list li {
+		float: left; /* Horizontal scroll only */
+		width: 300px;
+		height: 300px;
+	}
+	
+	.simply-scroll .simply-scroll-list li.small {
+		width: 260px;
+		height: 300px;
+	}
+	
+	.simply-scroll .simply-scroll-list li.verysmall {
+		width: 210px;
+		height: 300px;
+	}
+	
+	.simply-scroll .simply-scroll-list li.squere {
+		width: 400px;
+		height: 300px;
+	}
+	
+	.simply-scroll .simply-scroll-list li.verybig {
+		width: 500px;
+		height: 300px;
+	} 
+	
+	.simply-scroll .simply-scroll-list li img {
+		height: 300px;
+	}
+}
